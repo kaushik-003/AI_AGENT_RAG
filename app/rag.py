@@ -14,6 +14,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
+from app.config import settings
 
 
 class RAGSystem:
@@ -40,7 +41,8 @@ class RAGSystem:
         
         # Initialize embeddings
         self.embeddings = OpenAIEmbeddings(
-            model="text-embedding-3-small"
+            model=settings.embedding_model,
+            api_key=settings.openai_api_key
         )
         
         # Vector store
