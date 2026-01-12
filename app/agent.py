@@ -28,7 +28,8 @@ class AIAgent:
         self.llm = ChatOpenAI(
             model=settings.openai_model,
             temperature=0,
-            streaming=False
+            streaming=False,
+            api_key=settings.openai_api_key
         )
         
         # Bind tools to LLM
