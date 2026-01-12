@@ -1,4 +1,4 @@
-
+# app/rag.py
 """
 RAG (Retrieval-Augmented Generation) System
 Handles document loading, chunking, embedding, and retrieval
@@ -246,9 +246,9 @@ def test_rag_system():
         "What is CloudStorage Pro?"
     ]
     
-    print("\n" + "="*60)
+    print("\n" + "-"*60)
     print("TESTING RAG SYSTEM")
-    print("="*60 + "\n")
+    print("-"*60 + "\n")
     
     for query in test_queries:
         print(f"Query: {query}")
