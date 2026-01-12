@@ -9,6 +9,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "faiss-cpu" },
     { name = "fastapi" },
+    { name = "httpx" },
     { name = "langchain" },
     { name = "langchain-community" },
     { name = "langchain-core" },
@@ -33,6 +34,7 @@ dev = [
 requires-dist = [
     { name = "faiss-cpu", specifier = ">=1.13.2" },
     { name = "fastapi", specifier = ">=0.128.0" },
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "langchain", specifier = ">=1.2.3" },
     { name = "langchain-community", specifier = ">=0.4.1" },
     { name = "langchain-core", specifier = ">=1.2.7" },
