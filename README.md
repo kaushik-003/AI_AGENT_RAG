@@ -2,11 +2,11 @@
 
 An intelligent AI agent powered by GPT-4o-mini that can answer questions by searching through company documents using Retrieval-Augmented Generation (RAG).
 
-**🌐 Live Demo:** https://ai-agent-rag-7et2.onrender.com/docs
+**Live Demo:** https://ai-agent-rag-7et2.onrender.com/docs
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Architecture](#architecture)
@@ -22,7 +22,7 @@ An intelligent AI agent powered by GPT-4o-mini that can answer questions by sear
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project implements an AI-powered question-answering system that combines:
 
@@ -40,7 +40,7 @@ The agent can intelligently decide whether to:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐
@@ -109,7 +109,7 @@ The agent can intelligently decide whether to:
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Features
 
@@ -130,7 +130,7 @@ The agent can intelligently decide whether to:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 
@@ -165,7 +165,7 @@ The agent can intelligently decide whether to:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ai-agent-rag/
@@ -292,7 +292,7 @@ Found 4 PDF files:
   - api_documentation.pdf
   - benefits_guide.pdf
 
-📄 Found 4 PDF files
+ Found 4 PDF files
 Loading: company_policy.pdf
 ...
  Loaded 12 pages from 4 documents
@@ -442,7 +442,7 @@ curl -X POST https://ai-agent-rag-7et2.onrender.com/ask \
 
 ---
 
-## 🎨 Design Decisions
+## Design Decisions
 
 ### 1. Architecture Choices
 
@@ -653,44 +653,6 @@ curl -X POST https://ai-agent-rag-7et2.onrender.com/ask \
     - Audit logging
     - Compliance (GDPR, SOC2)
 
----
-
-## Assignment Requirements Checklist
-
-### Task 1: AI Agent Development
-
-- ✅ Accepts user queries
-- ✅ Decides between direct answer or document search
-- ✅ Returns structured responses
-- ✅ Uses OpenAI API
-- ✅ Implements prompt engineering
-- ✅ Tool calling (search_documents, get_current_date)
-- ✅ Session-based memory
-
-### Task 2: RAG Implementation ✅
-
-- ✅ 4 sample documents provided (PDF)
-- ✅ Documents converted to embeddings
-- ✅ Embeddings stored in FAISS
-- ✅ Retrieves relevant chunks
-- ✅ Passes context to LLM
-
-### Task 3: Backend API ✅
-
-- ✅ FastAPI framework
-- ✅ POST /ask endpoint
-- ✅ Request/response format as specified
-- ✅ Additional endpoints (health, clear-session)
-
-### Task 4: Deployment ✅
-
-- ✅ Deployed on Render.com (cloud platform)
-- ✅ Environment variables for secrets
-- ✅ Accessible via public URL
-- ✅ HTTPS enabled
-- ✅ Docker containerization (bonus)
-
-## Performance Metrics
 
 ### Response Times (Average)
 
